@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+html {
+    background-color: hsl(210, 46%, 95%);
+}
+.container {
+    display: grid;
+    gap: 30px;
+    margin: 120px auto;
+    width: 85%;
+}
+.card {
+    border-radius: 10px;
+    color: white;
+    padding: 30px 40px;
+}
+
+.name, .review {color: hsl(0, 0%, 81%);}
+.name {font-size: 13px;}
+.card h1 {
+    clear: both; 
+    font-size: 21px; 
+    line-height: 1.5; 
+    margin: 20px 0;
+}
+
+.container > div:nth-child(1){
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(bg-pattern-quotation.svg),linear-gradient(hsl(263, 55%, 52%),hsl(263, 55%, 52%));
+    background-position-x: 93%;
+    background-repeat: no-repeat;
+    grid-area: 1/1/2/4;
+}
+
+.container > div:nth-child(2){
+    background-color: hsl(217, 19%, 35%);
+    grid-area: 1/4/2/5;
+}
+
+.container > div:nth-child(3){
+    background-color: hsl(0, 0%, 100%);
+    grid-area: 2/1/3/2;
+}
+.container > div:nth-child(3) .name {
+    color: hsl(217, 19%, 35%) !important;
+}
+.container > div:nth-child(3) .name p {
+    color: hsl(217, 19%, 35%) !important;
+    opacity: 50%;
+}
+.container > div:nth-child(3) .review {
+    color: hsl(217, 19%, 35%) !important;
+    opacity: 70%;
+}
+
+.container > div:nth-child(4){
+    background-color: hsl(219, 29%, 14%);
+    grid-area: 2/2/3/5;
+}
+
+.container > div:nth-child(5){
+    background-color: hsl(0, 0%, 100%);
+    grid-area: 1/5/3/6;
+}
+.container > div:nth-child(5) .name {
+    color: hsl(217, 19%, 35%) !important;
+}
+.container > div:nth-child(5) .name p {
+        color: hsl(217, 19%, 35%) !important;
+        opacity: 50%;
+}
+.container > div:nth-child(5) .review {
+    color: hsl(217, 19%, 35%) !important;
+    opacity: 70%;
+}
+
+.avatar {
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+    width: 35px;
+}
+.container > div:nth-child(3) h1, .container > div:nth-child(5) h1 {
+    color: hsl(219, 29%, 14%);
+}
+.container > div:nth-child(4) .avatar, .container > div:nth-child(1) .avatar {
+    border: solid 2px hsl(263deg 64% 65%);
+}
+
+.name p { 
+    margin-top: 5px;
+    opacity: 50%;
+}
+.review {
+    line-height: 1.5;   
+    opacity: 70%;   
+    width: 87%;
+}
+ @media (max-width: 800px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .card h1 {font-size: 18.5px;}
+    .name {font-size: 10px;}
+    .name p {font-size: 12px;}
+    .review {font-size: 14px;}
+
+ }
