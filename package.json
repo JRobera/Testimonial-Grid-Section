@@ -8,7 +8,7 @@
     "gh-pages": "^4.0.0"
   },
   "name": "testimonials-grid-section-main",
-  "homepage": "https://JRobera.github.io/",
+  "homepage": "https://JRobera.github.io/Testimonial-Grid-Section",
   "description": "![Design preview for the Testimonials grid section coding challenge](./design/desktop-preview.jpg)",
   "version": "1.0.0",
   "main": "index.js",
